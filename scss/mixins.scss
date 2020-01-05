@@ -1,0 +1,34 @@
+@mixin btn(){
+    display: inline-block;
+
+    color: $bright-blue;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.1rem;
+
+    border: 0.1rem $bright-blue solid;
+    border-radius: 5%;
+    padding: 0.8rem 1.133rem;
+    margin-top: 3.33rem;
+    transition: background-color 0.1s linear;
+
+    & span{
+        user-select: none;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+    
+    &:active{
+        background-color: lighten($bright-blue, 30%);
+
+        & span{
+            background-color: rgb(72,75,104);
+            color: transparent;
+            background-clip: text;
+        }
+    }
+
+    @content;
+}

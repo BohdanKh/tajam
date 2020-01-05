@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #fff;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+// variables
+$bright-blue: #00e0d0;
+$blackOfText: #413d4b;
+$greyOfText: #a8a7ab;
+$overlayPurple: rgba(47,53,87,0.85);
+
+
+// import
+@import "mixins.scss";
+@import "header.scss";
+@import "intro.scss";
+@import "story.scss";
+@import "watch.scss";
+@import "expertise.scss";
+@import "team.scss"
+
+

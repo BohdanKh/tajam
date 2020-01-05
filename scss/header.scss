@@ -1,0 +1,54 @@
+////////////////////////    header              ////////////////////////
+
+
+.header{
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: rgba(10, 18, 58, 1);
+    height: 5.6rem;
+    width: 100%;
+    padding: 0 2.33rem 0  2rem;
+}
+
+.header_logo{
+    display: flex;
+    align-items: center;
+
+    span{
+        margin-left: 1rem;
+        font-size: 2rem;
+        background: linear-gradient(90deg, #07ffee, #0a6da3);
+        color: transparent;
+        background-clip: text;
+    }
+}
+
+.header_intro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav{
+    display: flex;
+    align-items: center;
+
+    margin-right: 2.3rem;
+}
+
+.nav_item{
+    margin-right: 0.55rem;
+    text-transform: uppercase;
+    font-size: 0.866rem;
+    transition: color 0.1s linear; 
+
+    &:hover{
+        color: #9994dd;
+    }
+
+}

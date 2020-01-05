@@ -1,0 +1,41 @@
+.story{
+    display: flex;
+
+    color: $blackOfText;
+    margin-bottom: 4.6rem;
+}
+
+.story_img{
+    margin-right: 3rem;
+    height: 15.266rem;
+}
+
+.story_title{
+    font-size: 1.466rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.866rem;
+}
+
+.story_text{
+    color: $greyOfText;
+    line-height: 1.4;
+}
+
+.story_btn{
+    @include btn(){
+        margin-top: 1.5rem;
+
+        &:hover{
+            background-color: darken(#fff, 10%);
+        }
+
+        &:active{
+            background-color: darken(#fff, 50%);
+
+            span{
+                color: #fff;
+            }
+        }
+    };
+}
