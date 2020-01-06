@@ -23,19 +23,5 @@
 }
 
 .story_btn{
-    @include btn(){
-        margin-top: 1.5rem;
-
-        &:hover{
-            background-color: darken(#fff, 10%);
-        }
-
-        &:active{
-            background-color: darken(#fff, 50%);
-
-            span{
-                color: #fff;
-            }
-        }
-    };
+    @include btnForLightBackground();
 }

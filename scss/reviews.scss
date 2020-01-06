@@ -1,0 +1,98 @@
+.reviews{
+    background-image: url(../img/reviews/bg.jpg);
+    background-size: cover;
+    margin-bottom: 4.666rem;
+    
+
+    &_overlay{
+        @include makeOverlay();
+    }
+
+    &_intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_quotes{
+        margin-top: 4.33rem;
+    }
+
+    &_slider{
+        max-width: 40rem;
+        width: 100%;
+        text-align: center;
+        margin: 2.3rem 0 4.3rem;
+
+        &_item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            min-height: 17.66rem;
+            padding: 2rem;
+
+            &_name{
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 2.33rem 0 0.5rem;
+            }
+
+            &_position{
+                text-transform: uppercase;
+                font-size: 0.7rem;
+            }
+        }
+
+        &_nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &_arrow_left{
+                position: relative;
+                left: -2rem;
+                width: 1.33rem;
+                height: 1.33rem;
+                @include makeArrow($greyOfText, 0.3rem, 0.3rem);
+                transform: rotate(180deg);
+                &:hover:before, &:hover:after{
+                    background-color: lighten($greyOfText, 30%);
+                }
+            }
+
+            &_arrow_right{
+                position: relative;
+                right: -2rem;
+                width: 1.33rem;
+                height: 1.333rem;
+                @include makeArrow($greyOfText, 0.3rem, 0.3rem);
+                &:hover:before, &:hover:after{
+                    background-color: lighten($greyOfText, 30%);
+                }
+            }
+
+            &_items{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &_item{
+                width: 3.66rem;
+                border-radius: 50%;
+                margin: 0 0.5rem;
+                transition: width 0.1s linear;
+
+                &:hover{
+                    width: 5.33rem;
+                }
+
+                &-active{
+                    width: 5.33rem;
+                }
+            }
+            
+        }
+    }
+}

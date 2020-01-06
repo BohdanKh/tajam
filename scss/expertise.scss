@@ -42,12 +42,36 @@
         flex-direction: column;
         align-items: center;
 
-        margin-right: $marg;
-        margin-bottom: $marg;
-        width: (100% - (($cols - 1) * $marg)) / $cols;
-        &:nth-child(#{$cols}n){
-            margin-right: 0;
-        }
+        position: relative;
+
+        $offset: 2%;
+        @include makeGrid(3, $offset){
+            border-right: 0.1rem $greyOfText solid;
+            padding-right: $offset;
+            &:nth-child(#{$cols}n){
+                border-right: none;
+                padding-right: 0;
+            };
+
+            //by default 'n' equel -1   =>   -(-1)=1
+            &:nth-child(-n+3){
+
+                &:after{
+                    content: "";
+                    display: block;
+
+                    width: 100%;
+                    height: 0.1rem;
+                    background-color: $greyOfText;
+
+                    position: absolute;
+                    left: 50%;
+                    bottom: -0.66rem;
+                    z-index: 1;
+                    transform: translateX(-53%);
+                }
+            }
+        };
     }
 }
 

@@ -8,6 +8,8 @@ body{
 *,
 *:before,
 *:after{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -17,20 +19,17 @@ body{
     margin: 0 auto;
 }
 
-// variables
-$bright-blue: #00e0d0;
-$blackOfText: #413d4b;
-$greyOfText: #a8a7ab;
-$overlayPurple: rgba(47,53,87,0.85);
 
 
 // import
+@import "variables.scss";
 @import "mixins.scss";
 @import "header.scss";
 @import "intro.scss";
 @import "story.scss";
 @import "watch.scss";
 @import "expertise.scss";
-@import "team.scss"
-
-
+@import "team.scss";
+@import "works.scss";
+@import "reviews.scss";
+@import "contacts.scss";
