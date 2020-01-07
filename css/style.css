@@ -721,3 +721,142 @@ body {
       margin-bottom: 1rem; }
     .contacts_clients_icon {
       vertical-align: middle; }
+
+.footer {
+  background-image: url(../img/footer/bg.jpg);
+  background-size: cover; }
+  .footer_outline {
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlayColor, #00f); }
+  .footer_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 4rem 1rem; }
+  .footer_other {
+    width: 30%; }
+    .footer_other_header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 1rem; }
+      .footer_other_header span {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+        background: -webkit-gradient(linear, left top, right top, from(#0ff), to(#00f));
+        background: -webkit-linear-gradient(left, #0ff, #00f);
+        background: -o-linear-gradient(left, #0ff, #00f);
+        background: linear-gradient(90deg, #0ff, #00f);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text; }
+    .footer_other_text {
+      margin-bottom: 2rem; }
+    .footer_other_refs {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .footer_other_refs_item {
+        text-decoration: none;
+        color: inherit;
+        margin-right: 0.75rem; }
+        .footer_other_refs_item:hover {
+          border-bottom: 0.1rem solid #fff; }
+        .footer_other_refs_item:active {
+          color: #ccc;
+          border-color: #ccc; }
+  .footer_title {
+    text-transform: uppercase;
+    height: 3.333rem;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer_contacts {
+    width: 30%; }
+    .footer_contacts_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 1rem; }
+      .footer_contacts_item i {
+        margin-right: 1rem;
+        width: 1rem; }
+  .footer_community {
+    position: relative;
+    width: 30%; }
+    .footer_community_subscribe {
+      height: 2rem;
+      margin-bottom: 2rem; }
+      .footer_community_subscribe form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .footer_community_subscribe_email {
+        background-color: transparent;
+        color: inherit;
+        padding: 0.66rem;
+        margin-right: 0.5rem; }
+      .footer_community_subscribe_btn {
+        border: none;
+        outline: none;
+        width: 3rem;
+        height: 3rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        background-image: url(../img/footer/plane.png);
+        background-size: 2.32rem 2.32rem;
+        background-position: 50% 55%;
+        background-repeat: no-repeat; }
+        .footer_community_subscribe_btn:hover {
+          background-color: #a8a7ab; }
+        .footer_community_subscribe_btn:active {
+          border: 0.0666rem solid #000; }
+    .footer_community_social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .footer_community_social_item {
+        width: 1.75rem;
+        height: 1.75rem;
+        color: inherit;
+        text-decoration: none;
+        border: 0.1rem solid #00e0d0;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .footer_community_social_item i {
+          font-size: 0.8rem;
+          height: 0.8rem;
+          color: #00e0d0; }
+        .footer_community_social_item:hover {
+          background-color: #00e0d0; }
+        .footer_community_social_item:hover i {
+          color: var(--overlayColor); }
+        .footer_community_social_item:active {
+          background-color: #47fff2;
+          border-color: #47fff2; }
+    .footer_community_credit {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1; }

@@ -32,7 +32,9 @@
     }
 
     @content;
-}
+};
+
+
 
 @mixin btnForLightBackground(){
     @include btn(){
@@ -49,7 +51,9 @@
 
 
     };
-}
+};
+
+
 
 @mixin makeGrid($cols, $margin){
     display: flex;
@@ -62,13 +66,17 @@
     width: ((100% - ($margin * ($cols - 1))) / $cols);
 
     @content;
-}
+};
+
+
 
 @mixin makeOverlay(){
     width: 100%;
     height: 100%;
     background-color: var(--overlayColor, #00f);//[N.B.] var (main color, fallback);
-}
+};
+
+
 
 @mixin makeArrow($color, $landslideBeforeTop, $landslideAfterBottom){
     &:before, &:after{
@@ -99,4 +107,4 @@
     }
 
     @content;
-}//p.s. parental tag must have "relative" position
+};//p.s. parental tag must have "relative" position
