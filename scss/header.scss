@@ -1,19 +1,30 @@
 ////////////////////////    header              ////////////////////////
-
-
 .header{
-    display: flex;
-    align-items: center;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // z-index: 1000;
 
     background-color: rgba(10, 18, 58, 1);
     height: 5.6rem;
     width: 100%;
+}
+
+#header_for-corect-nav{
+    position: relative;
+    width: 100%;
+    height: 100%;
     padding: 0 2.33rem 0  2rem;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.header_intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header_logo{
@@ -27,11 +38,6 @@
         color: transparent;
         background-clip: text;
     }
-}
-
-.header_intro{
-    display: flex;
-    justify-content: space-between;
 }
 
 .header_nav{
@@ -50,5 +56,84 @@
     &:hover{
         color: #9994dd;
     }
+}
 
+.header_burger{
+    display: none;
+    align-items: center;
+
+    position: relative;
+    width: 3rem;
+    height: 2rem;
+
+    
+
+    &:hover &_line{
+        background-color: #fff;
+    }
+
+    &:active &_line{
+        outline: 0.06rem solid $bright-blue;
+    }
+
+    &:active &_line:before, &:active &_line:after{
+        outline: 0.0666rem solid $bright-blue;
+    }
+
+    &_line{
+        width: 3rem;
+        height: 0.4em;
+        background-color: $greyOfText;
+
+        &:before, &:after{
+            content: "";
+            display: block;
+
+            width: 3rem;
+            height: 0.4rem;
+            background-color: inherit;
+
+            position: absolute;
+            left: 0;
+            z-index: 1001;
+        }
+
+        &:before{
+            top: 0;
+        }
+
+        &:after{
+            bottom: 0;
+        }
+    }
+}
+
+
+
+// @media
+@media screen and (max-width: 750px){
+    .header{
+        &_nav{
+            display: none;
+            flex-direction: column;
+
+            position: absolute;
+            right: 0;
+            top: 90px;
+            z-index: 1000;
+
+            width: 100vw;
+            background-color: lighten($greyOfText, 10%);
+            margin-right: 0;
+            box-shadow: 0 1rem 1.5rem #000;
+
+            .nav_item{
+                margin: 0.5rem 0;
+            }
+        }
+
+        &_burger{
+            display: flex;
+        }
+    }
 }

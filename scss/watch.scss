@@ -1,7 +1,7 @@
 .watch{
     overflow: hidden;
     position: relative;
-    padding-top: 30px;
+    padding-top: 2rem;
     padding-bottom: 56.25%;
     height: 0;
 
@@ -11,6 +11,62 @@
         height: 100%;
         left: 0;
         top: 0;
+    }
+}
+
+
+// @media
+@media screen and (max-width: 870px){
+    .watch{
+        padding-bottom: 63%;
+    }
+}
+
+@media screen and (max-width: 765px){
+    .watch{
+        padding-bottom: 72%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .watch{
+        padding-bottom: 81%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .watch{
+        padding-bottom: 90%;
+    }
+}
+
+@media screen and(max-width: 550px){
+    .watch{
+        padding-bottom: 101%;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .watch{
+        padding-bottom: 111%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .watch{
+        padding-bottom: 126%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .watch{
+        padding-bottom: 140%;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .watch{
+        padding-bottom: 150%;
     }
 }
 

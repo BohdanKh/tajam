@@ -44,6 +44,8 @@
 
         position: relative;
 
+        text-align: center;
+
         $offset: 2%;
         @include makeGrid(3, $offset){
             border-right: 0.1rem $greyOfText solid;
@@ -75,7 +77,7 @@
     }
 }
 
-$eI: expertise_item;
+
 
 // .#{$eI}_icon{
     
