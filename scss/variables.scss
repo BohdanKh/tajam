@@ -1,12 +1,16 @@
-// scss variables
+////     scss variables     ////
 $bright-blue: #00e0d0;
 $blackOfText: #413d4b;
 $greyOfText: #a8a7ab;
 
+// expertise
 $eI: expertise_item;
+$offset: 2%;
+$offsetTablet: 7%;
+
  
 
-// css variables
+////     css variables      ////
 :root{
     --overlayColor: rgba(47,53,87,0.85);//p.s. watch mixins
 }

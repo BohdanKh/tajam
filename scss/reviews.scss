@@ -76,6 +76,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                overflow: hidden;
             }
 
             &_item{
@@ -95,4 +97,32 @@
             
         }
     }
+}
+
+@media screen and (max-width: 760px){
+    .reviews_slider_nav_items{
+        width: 16.66rem;
+        
+    }
+}
+
+@media screen and (max-width: 425px){
+    .reviews_slider_nav{
+        &_items{
+            width: 14rem;
+        }
+
+        &_item{
+            margin:0 0.3rem;
+        }
+
+        &_arrow_left{
+            left: -1rem;
+        }
+
+        &_arrow_right{
+            right: -1rem;
+        }
+    }
+
 }

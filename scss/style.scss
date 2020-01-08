@@ -1,29 +1,9 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    color: #fff;
-}
-
-*,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    width: 100%;
-    max-width: 64rem;
-    margin: 0 auto;
-}
-
-
-
 // import
+@import "common.scss";
 @import "variables.scss";
 @import "mixins.scss";
+
+
 @import "header.scss";
 @import "intro.scss";
 @import "story.scss";
@@ -34,3 +14,5 @@ body{
 @import "reviews.scss";
 @import "contacts.scss";
 @import "footer.scss";
+
+

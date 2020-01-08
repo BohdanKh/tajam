@@ -25,3 +25,26 @@
 .story_btn{
     @include btnForLightBackground();
 }
+
+
+//////////////////////      @media
+@media screen and (max-width: 768px){
+    .story{
+        flex-direction: column;
+        align-items: center;
+
+        padding: 0 2em;
+        text-align: center;
+
+        &_img{
+            margin-right: 0;
+            margin-bottom: 2rem;
+            width: 30%;
+            height: auto;
+        }
+
+        &_btn{
+            margin-top: 2rem;
+        }
+    }
+}

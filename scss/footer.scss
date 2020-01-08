@@ -174,3 +174,31 @@
         }
     }
 }
+
+
+
+/////////////////media
+@media screen and (max-width: 768px){
+    .footer_inner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_other, .footer_contacts, .footer_community{
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+
+    .footer_community{
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+    }
+} 
+
+@media screen and (max-width: 425px){
+    .footer{
+        &_other, &_contacts, &_community{
+            width: 100%;
+        }
+    }
+}

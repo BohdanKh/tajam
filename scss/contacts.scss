@@ -29,6 +29,10 @@
             font-size: 1.06rem;
         }
 
+        &_btn{
+            @include btnForLightBackground();
+            margin-top: 1.666rem;
+        }
 
     }
 
@@ -64,5 +68,43 @@
             
         }
 
+    }
+}
+
+
+////// @media
+@media screen and (max-width: 768px){
+    .contacts{
+        flex-direction: column;
+        padding: 1rem 2rem;
+
+        .form{
+            width: 80%;
+            margin-bottom: 4rem;
+
+            &_item{
+                padding: 0.5rem 0.75rem;
+                margin-bottom: 1rem;
+            }
+
+            &_textArea{
+                height: 8rem;
+            }
+
+            &_btn{
+                margin-top: 1rem;
+                padding: 0.33rem 0.66rem;
+            }
+        }
+
+        &_clients{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .contacts_clients_icon{
+        width: 100%;
     }
 }

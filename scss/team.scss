@@ -31,11 +31,8 @@
         $cols: 4;
         $marg: 3%;
 
-        margin-right: $marg;
-        &:nth-child(#{$cols}){
-            margin-right: 0;
-        }
-        width: (100% - ($marg * ($cols - 1))) / $cols;
+        @include makeGrid($cols, $marg);
+        display: block;
     }
 
     &_img{
@@ -68,6 +65,51 @@
 
     &_btn{
         @include btn();
+    }
+}
+
+
+
+//////////////// @media
+@media screen and (max-width: 768px){
+    .team{
+        &_content{
+            padding: 0 2rem;
+
+            &_item{
+                @include makeGrid(2, 7%);
+                display: block;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &_footer{
+            margin: 1rem auto 3rem;
+
+            &_btn{
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .team_header_title{
+        font-size: 1.5rem;
+    }
+
+    .team_content{
+        justify-content: center;
+    }
+
+    .team_content_item{
+        @include makeGrid(1, 5%);
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .team_content_title{
+        font-size: 0.9rem;
     }
 }
 

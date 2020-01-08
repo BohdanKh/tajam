@@ -46,18 +46,18 @@
 
         text-align: center;
 
-        $offset: 2%;
+        
         @include makeGrid(3, $offset){
             border-right: 0.1rem $greyOfText solid;
             padding-right: $offset;
-            &:nth-child(#{$cols}n){
+            &:nth-child(3n){
                 border-right: none;
                 padding-right: 0;
             };
 
-            //by default 'n' equel -1   =>   -(-1)=1
-            &:nth-child(-n+3){
-
+            //formula: a*n + b;     by default 'n' start from 0   =>   when -3+3=0 than STOP
+            &:nth-child(-n + #{$cols}){
+                // horizontal
                 &:after{
                     content: "";
                     display: block;
@@ -68,7 +68,7 @@
 
                     position: absolute;
                     left: 50%;
-                    bottom: -0.66rem;
+                    bottom: -0.5rem;
                     z-index: 1;
                     transform: translateX(-53%);
                 }
@@ -76,8 +76,6 @@
         };
     }
 }
-
-
 
 // .#{$eI}_icon{
     
@@ -91,4 +89,109 @@
 .#{$eI}_text{
     text-align: center;
     color: $greyOfText;
+}
+
+
+//////////////////////////  @media
+@media screen and (max-width: 768px){
+    .expertise_content_item{
+        @include makeGrid(2, $offsetTablet){
+            &:nth-child(-n+6){
+                border-right: none;
+                &:after{
+                    display: none;   
+                }
+            }
+
+
+            &:nth-child(2n){
+                border-right: none;
+                //horizontal
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 0.07rem;
+                    background-color: $greyOfText;
+
+                    position: absolute;
+                    right: 0;
+                    bottom: -1rem;
+                    z-index: 1;
+                }
+            }
+
+            &:nth-child(2n+1){
+                // vertical line
+                &:before{
+                    content: "";
+                    display: block;
+
+                    width: 0.07rem;
+                    height: 100%;
+                    background-color: $greyOfText;
+
+                    position: absolute;
+                    right: -3vw;
+                    bottom: 0;
+                    z-index: 1;
+                }
+
+                margin-right: $offsetTablet;
+                // horizontal
+                &:after{
+                    content: "";
+                    display: block;
+
+                    width: 100%;
+                    height: 0.07rem;
+                    background-color: $greyOfText;
+
+                    position: absolute;
+                    right: -2rem;
+                    bottom: -1rem;
+                    z-index: 1;
+                }
+            }
+
+            &:nth-last-child(-n + 2){
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .expertise_header{
+        margin-bottom: 0;
+    }
+
+    .expertise_content_item{
+        @include makeGrid(1, 0);
+
+        &:nth-child(-n +6){
+            margin-bottom: 2rem;
+            &:before{
+                display: none;
+            }
+        }
+
+        &:nth-child(5){
+            &:after{
+                content: "";
+                display: block;
+
+                width: 100%;
+                height: 0.07rem;
+                background-color: $greyOfText;
+
+                position: absolute;
+                left: 0;
+                bottom: -1rem;
+                z-index: 1;
+            }
+        }
+    }
 }
