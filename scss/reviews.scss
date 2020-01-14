@@ -22,15 +22,21 @@
         max-width: 40rem;
         width: 100%;
         text-align: center;
-        margin: 2.3rem 0 4.3rem;
+        margin: 2.3rem 0.3rem;
+
+        &_items{
+            // height: 30rem;
+            display: flex;
+            margin-bottom: 2rem;
+        }
 
         &_item{
             display: flex;
             flex-direction: column;
             justify-content: center;
 
-            min-height: 17.66rem;
-            padding: 2rem;
+            // height: 30rem;
+            // margin: 2rem;
 
             &_name{
                 text-transform: uppercase;
@@ -45,53 +51,24 @@
         }
 
         &_nav{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &_arrow_left{
-                position: relative;
-                left: -2rem;
-                width: 1.33rem;
-                height: 1.33rem;
-                @include makeArrow($greyOfText, 0.3rem, 0.3rem);
-                transform: rotate(180deg);
-                &:hover:before, &:hover:after{
-                    background-color: lighten($greyOfText, 30%);
-                }
-            }
-
-            &_arrow_right{
-                position: relative;
-                right: -2rem;
-                width: 1.33rem;
-                height: 1.333rem;
-                @include makeArrow($greyOfText, 0.3rem, 0.3rem);
-                &:hover:before, &:hover:after{
-                    background-color: lighten($greyOfText, 30%);
-                }
-            }
-
-            &_items{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                overflow: hidden;
-            }
-
             &_item{
-                width: 3.66rem;
+                height: 5rem;
                 border-radius: 50%;
                 margin: 0 0.5rem;
-                transition: width 0.1s linear;
+                transition: height 0.1s linear;
 
-                &:hover{
-                    width: 5.33rem;
-                }
+                // &:hover{
+                //     height: 6.5rem;
+                // }
 
-                &-active{
-                    width: 5.33rem;
+                // &-active{
+                //     height: 150%;
+                // }
+
+                & img{
+                    height: inherit;
+                    margin: 0 auto;
+                    border-radius: 50%;
                 }
             }
             
@@ -100,9 +77,9 @@
 }
 
 @media screen and (max-width: 760px){
-    .reviews_slider_nav_items{
-        width: 16.66rem;
-        
+    .reviews_slider_nav{
+        width: 20rem;
+        margin: 0 auto;
     }
 }
 
@@ -126,3 +103,26 @@
     }
 
 }
+
+
+
+
+//////////////////  slick
+.reviews_slider_nav{
+    .slick-track{
+        height: 7rem;
+
+        display: flex;
+        align-items: center;
+    }
+    
+    .slick-current{
+        height: 6.5rem;
+    }
+}
+
+
+
+
+
+

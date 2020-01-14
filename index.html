@@ -6,8 +6,18 @@
     <meta http-equiv="X-U+A-Compatible" content="ie=adge">
     <title>tajam</title>
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
     <!-- fontawesome icons -->
     <script src="https://kit.fontawesome.com/c7ca6bcefa.js" crossorigin="anonymous"></script>
+
+
+    <!-- slick slider:  https://kenwheeler.github.io/slick/-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <script type="text/javascript" src="js/jquery.min.js" defer></script>
+    <script type="text/javascript" src="slick/slick.min.js" defer></script>
 
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js" defer></script>
@@ -22,17 +32,17 @@
                     <span>tajam</span>
                 </div>
 
-                <div class="header_nav">
-                    <div class="nav_item">home</div>
-                    <div class="nav_item">about</div>
-                    <div class="nav_item">expertise</div>
-                    <div class="nav_item">team</div>
-                    <div class="nav_item">works</div>
-                    <div class="nav_item">people say</div>
-                    <div class="nav_item">contacts</div>
+                <div class="header_nav" id="header_nav">
+                    <div class="nav_item" data-block="intro">home</div>
+                    <div class="nav_item" data-block="story">about</div>
+                    <div class="nav_item" data-block="expertise">expertise</div>
+                    <div class="nav_item" data-block="team">team</div>
+                    <div class="nav_item" data-block="works">works</div>
+                    <div class="nav_item" data-block="reviews">people say</div>
+                    <div class="nav_item" data-block="contacts">contacts</div>
                 </div>
 
-                <div class="header_burger">
+                <div class="header_burger" id="header_burger">
                     <div class="header_burger_line"></div>
                 </div>
             </div>
@@ -41,29 +51,67 @@
 
 
 <!-- intro -->
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="intro_overlay">
             <div class="intro_inner container">
                 <div class="intro_slider">
                     <div class="intro_slider_inner">
-                        <div class="intro_slider_item">
-                            <div class="intro_slider_title">
-                                We Are Awesome Creative Agency
+                        <div class="intro_slider_scrollLine">
+                            <div class="intro_slider_item">
+                                <div class="intro_slider_title">
+                                    We Are Awesome Creative Agency
+                                </div>
+                                <div class="intro_slider_text">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                                </div>
+                                <div class="intro_slider_button ">
+                                    <span>learn more</span>
+                                </div>
                             </div>
-                            <div class="intro_slider_text">
-                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+
+                            <div class="intro_slider_item">
+                                <div class="intro_slider_title">
+                                    We Are Awesome Creative Agency
+                                </div>
+                                <div class="intro_slider_text">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, 
+                                </div>
+                                <div class="intro_slider_button ">
+                                    <span>learn more</span>
+                                </div>
                             </div>
-                            <div class="intro_slider_button ">
-                                <span>learn more</span>
+                            
+                            <div class="intro_slider_item">
+                                <div class="intro_slider_title">
+                                    We Are Awesome Creative Agency
+                                </div>
+                                <div class="intro_slider_text">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                                </div>
+                                <div class="intro_slider_button ">
+                                    <span>learn more</span>
+                                </div>
+                            </div>
+
+                            <div class="intro_slider_item">
+                                <div class="intro_slider_title">
+                                    We Are Awesome Creative Agency
+                                </div>
+                                <div class="intro_slider_text">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, 
+                                </div>
+                                <div class="intro_slider_button ">
+                                    <span>learn more</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="intro_slider_dots">
-                        <div class="intro_slider_dot"></div>
-                        <div class="intro_slider_dot"></div>
-                        <div class="intro_slider_dot"></div>
-                        <div class="intro_slider_dot"></div>
+                        <div class="intro_slider_dot" data-slide="0"></div>
+                        <div class="intro_slider_dot" data-slide="1"></div>
+                        <div class="intro_slider_dot" data-slide="2"></div>
+                        <div class="intro_slider_dot" data-slide="3"></div>
                     </div>
                 </div>
             </div>
@@ -72,7 +120,7 @@
 
 
 <!-- story -->
-    <div class="story container">
+    <div class="story container" id="story">
         <img src="img/story/arrow.png" class="story_img" alt="ERROR">
 
         <div class="story_content">
@@ -97,7 +145,7 @@
 
 
 <!-- expertise -->
-    <div class="expertise container">
+    <div class="expertise container" id="expertise">
         <div class="expertise_header">
             <div class="expertise_header_title">Expertise</div>
             <div class="expertise_header_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -143,7 +191,7 @@
     </div><!-- expertise -->
 
 <!-- team -->
-    <div class="team">
+    <div class="team" id="team">
         <div class="team_overlay">
             <div class="team_intro container">
                 <div class="team_header">
@@ -195,7 +243,7 @@
 
 
 <!-- works -->
-    <div class="works">
+    <div class="works" id="works">
         <div class="works_supcontent container">
             <div class="works_title">our works</div>
             <a href="#" class="works_ref">See All Project in dribbble</a>
@@ -274,13 +322,43 @@
 
 
 <!-- reviews -->
-    <div class="reviews">
+    <div class="reviews" id="reviews">
         <div class="reviews_overlay">
             <div class="reviews_intro container">
                  <img class="reviews_quotes" src="img/reviews/quotes.png" alt="error">
 
                 <div class="reviews_slider">
-                    <div class="reviews_slider_items">
+                    <div class="reviews_slider_items" height="100rem">
+                        <div class="reviews_slider_item">
+                            <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                            </div>
+
+                            <div class="reviews_slider_item_name">jeo galadriel</div>
+                            <div class="reviews_slider_item_position">CEO TENGKuper</div>
+                        </div>
+
+                        <div class="reviews_slider_item">
+                            <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</div>
+
+                            <div class="reviews_slider_item_name">jeo galadriel</div>
+                            <div class="reviews_slider_item_position">CEO TENGKuper</div>
+                        </div>
+
+                        <div class="reviews_slider_item">
+                            <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
+
+                            <div class="reviews_slider_item_name">jeo galadriel</div>
+                            <div class="reviews_slider_item_position">CEO TENGKuper</div>
+                        </div>
+
+                        <div class="reviews_slider_item">
+                            <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
+
+                            <div class="reviews_slider_item_name">jeo galadriel</div>
+                            <div class="reviews_slider_item_position">CEO TENGKuper</div>
+                        </div>
+
                         <div class="reviews_slider_item">
                             <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
 
@@ -290,17 +368,21 @@
                     </div>
 
                     <div class="reviews_slider_nav">
-                        <div class="reviews_slider_nav_arrow_left"></div>
-
-                        <div class="reviews_slider_nav_items">
-                            <img class="reviews_slider_nav_item" src="img/reviews/i1.jpg" alt="Error">
-                            <img class="reviews_slider_nav_item" src="img/reviews/i2.jpg" alt="Error">
-                            <img class="reviews_slider_nav_item eviews_slider_nav_item-active" src="img/reviews/i3.jpg" alt="Error">
-                            <img class="reviews_slider_nav_item" src="img/reviews/i4.jpg" alt="Error">
-                            <img class="reviews_slider_nav_item" src="img/reviews/i5.jpg" alt="Error">
+                        <div class="reviews_slider_nav_item">
+                            <img src="img/reviews/i1.jpg" alt="Error">
                         </div>
-
-                        <div class="reviews_slider_nav_arrow_right"></div>
+                        <div class="reviews_slider_nav_item">
+                            <img src="img/reviews/i2.jpg" alt="Error">  
+                        </div>
+                        <div class="reviews_slider_nav_item">
+                            <img src="img/reviews/i3.jpg" alt="Error">    
+                        </div>
+                        <div class="reviews_slider_nav_item">
+                            <img src="img/reviews/i4.jpg" alt="Error">  
+                        </div>
+                        <div class="reviews_slider_nav_item">
+                            <img src="img/reviews/i5.jpg" alt="Error">  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -308,7 +390,8 @@
     </div>    
     
 
-    <div class="contacts container">
+<!-- contacts -->
+    <div class="contacts container" id="contacts">
         <form class="form">
             <div class="contacts_title">give as a good news</div>
             <input type="text" placeholder="Name" class="form_item">

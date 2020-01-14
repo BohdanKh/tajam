@@ -18,24 +18,29 @@
     }
 
     &_slider{
-        height: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 6rem;
+        
 
         &_inner{
-            height: 100%;
+            width: 20rem;
+            height: 29rem;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        &_scrollLine{
+            float: left;
+            margin-left: 0rem;
+            transition: margin-left 200ms linear;
 
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+
+            height: 100%;
         }
         
         &_item{
-            
-        
+            width: 20rem;
+            height: 100%;
+            padding: 1.5rem 1rem;
             text-align: center;
         }
         
@@ -64,7 +69,8 @@
         
         &_dots{
             display: flex;
-            margin: 2.5rem 0;
+            justify-content: center;
+            padding-bottom: 3rem;
         }
         
         &_dot{
@@ -91,7 +97,7 @@
 
 @media screen and (max-width: 575px){
     .intro_slider{
-        margin: 0 3rem;
+        margin: 0 auto;
     }
 }
 
