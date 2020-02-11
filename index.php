@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta chardet="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-U+A-Compatible" content="ie=adge">
     <title>tajam</title>
@@ -18,6 +18,9 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <script type="text/javascript" src="js/jquery.min.js" defer></script>
     <script type="text/javascript" src="slick/slick.min.js" defer></script>
+    
+    <!-- fiveicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
 
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js" defer></script>
@@ -320,85 +323,84 @@
         </div>
     </div>
 
-
+    
 <!-- reviews -->
-    <div class="reviews" id="reviews">
-        <div class="reviews_overlay">
-            <div class="reviews_intro container">
-                 <img class="reviews_quotes" src="img/reviews/quotes.png" alt="error">
+<div class="reviews" id="reviews">
+    <div class="reviews_overlay">
+        <div class="reviews_intro container">
+             <img class="reviews_quotes" src="img/reviews/quotes.png" alt="error">
 
-                <div class="reviews_slider">
-                    <div class="reviews_slider_items" height="100rem">
-                        <div class="reviews_slider_item">
-                            <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
-                            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
-                            </div>
-
-                            <div class="reviews_slider_item_name">jeo galadriel</div>
-                            <div class="reviews_slider_item_position">CEO TENGKuper</div>
+            <div class="reviews_slider">
+                <div class="reviews_slider_items" height="100rem">
+                    <div class="reviews_slider_item">
+                        <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
                         </div>
 
-                        <div class="reviews_slider_item">
-                            <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</div>
-
-                            <div class="reviews_slider_item_name">jeo galadriel</div>
-                            <div class="reviews_slider_item_position">CEO TENGKuper</div>
-                        </div>
-
-                        <div class="reviews_slider_item">
-                            <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
-
-                            <div class="reviews_slider_item_name">jeo galadriel</div>
-                            <div class="reviews_slider_item_position">CEO TENGKuper</div>
-                        </div>
-
-                        <div class="reviews_slider_item">
-                            <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
-
-                            <div class="reviews_slider_item_name">jeo galadriel</div>
-                            <div class="reviews_slider_item_position">CEO TENGKuper</div>
-                        </div>
-
-                        <div class="reviews_slider_item">
-                            <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
-
-                            <div class="reviews_slider_item_name">jeo galadriel</div>
-                            <div class="reviews_slider_item_position">CEO TENGKuper</div>
-                        </div>
+                        <div class="reviews_slider_item_name">jeo galadriel</div>
+                        <div class="reviews_slider_item_position">CEO TENGKuper</div>
                     </div>
 
-                    <div class="reviews_slider_nav">
-                        <div class="reviews_slider_nav_item">
-                            <img src="img/reviews/i1.jpg" alt="Error">
-                        </div>
-                        <div class="reviews_slider_nav_item">
-                            <img src="img/reviews/i2.jpg" alt="Error">  
-                        </div>
-                        <div class="reviews_slider_nav_item">
-                            <img src="img/reviews/i3.jpg" alt="Error">    
-                        </div>
-                        <div class="reviews_slider_nav_item">
-                            <img src="img/reviews/i4.jpg" alt="Error">  
-                        </div>
-                        <div class="reviews_slider_nav_item">
-                            <img src="img/reviews/i5.jpg" alt="Error">  
-                        </div>
+                    <div class="reviews_slider_item">
+                        <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</div>
+
+                        <div class="reviews_slider_item_name">jeo galadriel</div>
+                        <div class="reviews_slider_item_position">CEO TENGKuper</div>
+                    </div>
+
+                    <div class="reviews_slider_item">
+                        <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
+
+                        <div class="reviews_slider_item_name">jeo galadriel</div>
+                        <div class="reviews_slider_item_position">CEO TENGKuper</div>
+                    </div>
+
+                    <div class="reviews_slider_item">
+                        <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
+
+                        <div class="reviews_slider_item_name">jeo galadriel</div>
+                        <div class="reviews_slider_item_position">CEO TENGKuper</div>
+                    </div>
+
+                    <div class="reviews_slider_item">
+                        <div class="reviews_slider_item_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
+
+                        <div class="reviews_slider_item_name">jeo galadriel</div>
+                        <div class="reviews_slider_item_position">CEO TENGKuper</div>
+                    </div>
+                </div>
+
+                <div class="reviews_slider_nav">
+                    <div class="reviews_slider_nav_item">
+                        <img src="img/reviews/i1.jpg" alt="Error">
+                    </div>
+                    <div class="reviews_slider_nav_item">
+                        <img src="img/reviews/i2.jpg" alt="Error">  
+                    </div>
+                    <div class="reviews_slider_nav_item">
+                        <img src="img/reviews/i3.jpg" alt="Error">    
+                    </div>
+                    <div class="reviews_slider_nav_item">
+                        <img src="img/reviews/i4.jpg" alt="Error">  
+                    </div>
+                    <div class="reviews_slider_nav_item">
+                        <img src="img/reviews/i5.jpg" alt="Error">  
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
-    
+    </div>
+</div>    
 
 <!-- contacts -->
     <div class="contacts container" id="contacts">
-        <form class="form">
+        <form action="form.php" method="POST" target="_blank" class="form">
             <div class="contacts_title">give as a good news</div>
-            <input type="text" placeholder="Name" class="form_item">
-            <input type="email" placeholder="Email" class="form_item">
-            <input type="text" placeholder="Subject" class="form_item">
-            <textarea placeholder="Your Massage" resize="none" class="form_textArea"></textarea>
-            <input type="submit" value="send" class="form_btn">
+            <input type="text" placeholder="Name" class="form_item" name="name">
+            <input type="email" placeholder="Email" class="form_item" name="email">
+            <input type="text" placeholder="Subject" class="form_item" name="subject">
+            <textarea placeholder="Your Massage" resize="none" class="form_textArea" name="content"></textarea>
+            <input type="submit" value="send" class="form_btn" name="send">
         </form>
 
         <div class="contacts_clients">

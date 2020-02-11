@@ -52,6 +52,7 @@ areaOfDots[0].onclick = function(event){
 /////////////////   burger
 let burger = document.getElementById("header_burger");
 burger.addEventListener("click", toggleNav);
+window.onresize = toggleNav;
 function toggleNav(){
     
     if(headerCounter % 2 == 0){

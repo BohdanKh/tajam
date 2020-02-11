@@ -2,22 +2,26 @@
     display: flex;
 
     height: 100%;
-    // margin-top:5.6rem;
+    
+    margin-bottom: 4.6rem;
+
     background-image: url("../img/intro/bg.jpg");
     background-size: cover;
-    margin-bottom: 4.6rem;
 
 
     &_overlay{
         @include makeOverlay();
+
     }
 
     &_inner{
-        height: 100%;
-        padding-top: 5.6rem;
+        margin-top: 5.6rem;
     }
 
     &_slider{
+        padding-top: 10%;
+        transform-style: inherit;
+
         
 
         &_inner{
@@ -25,6 +29,8 @@
             height: 29rem;
             margin: 0 auto;
             overflow: hidden;
+
+            margin-top: -100px;
         }
 
         &_scrollLine{
